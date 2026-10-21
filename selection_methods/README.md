@@ -12,10 +12,10 @@
 
 `X` is a numeric DataFrame or an array of shape `(n_samples, n_features)`.
 
-- `outcome_type="linear"`: `y` is a one-dimensional numeric array (linear outcomes).
-- `outcome_type="survival"`: `y` is a structured NumPy array whose first two fields are the Boolean event indicator and numeric follow-up time. For example, use `sksurv.util.Surv.from_arrays(event, time)`.
+- `outcome_type="linear"`: `y` is a one-dimensional numeric array (linear outcome).
+- `outcome_type="survival"`: `y` is a structured NumPy array with the first field as the Boolean event indicator and the second field as numeric follow-up times. For example, use `sksurv.util.Surv.from_arrays(event, time)`.
 
-Preprocess and scale features before selection. For the linear CPSS/IPSS paths, center both `X` and `y`.
+Preprocess and scale features before selection. For the linear CPSS/IPSS, center both `X` and `y`.
 All selectors return a dictionary mapping method labels to selected feature names.
 
 
