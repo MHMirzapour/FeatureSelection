@@ -1,6 +1,6 @@
 # Simulation framework
 
-Generate correlated normal, lognormal, binary, and ordinal features with linear or right-censored survival outcomes.
+Generates correlated normal, lognormal, binary, and ordinal features with linear or right-censored survival outcomes.
 
 
 ## Example
