@@ -5,7 +5,7 @@
 - `cpss.py`: `select_cpss()`, complementary pairs stability selection.
 - `ipss.py`: `select_ipss()`, integrated path stability selection. Our implementation follows [omelikechi/ipss](https://github.com/omelikechi/ipss) for linear outcomes and uses Coxnet for survival outcomes.
 - `two_stage.py`: `select_lasso_uni()` and `select_uni_lasso()`, combining penalized selection and univariate tests in either order. Two-stage methods reuse observations for selection and testing and do not provide formal FDR control.
-- [knockoff](knockoff/README.md): single-realization and derandomized knockoff selection.
+- [knockoff](knockoff/README.md): single-realization (`select_knockoff_single()`) and derandomized knockoff ((`select_knockoff_derandomized()`)).
 
 
 ## Usage
