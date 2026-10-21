@@ -5,6 +5,9 @@ Generates correlated normal, lognormal, binary, and ordinal features with linear
 
 ## Example
 
+`generate_data()` returns covariates, outcome array, true feature names, and diagnostics. Features are standardized within each dataset.
+The runner derives a separate data seed for each replicate; it does not change a selector's `random_state`.
+
 ```python
 from simulation_framework.DGP import generate_data
 from simulation_framework.SimulationRunner import create_config, SimulationRunner
@@ -35,6 +38,3 @@ runner = SimulationRunner(
 results = runner.run([config])
 results.summary().to_csv("results/summary.csv", index=False)
 ```
-
-`generate_data()` returns covariates, outcome array, true feature names, and diagnostics. Features are standardized within each dataset.
-The runner derives a separate data seed for each replicate; it does not change a selector's `random_state`.
